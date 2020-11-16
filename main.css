@@ -30,7 +30,7 @@ body {
     padding: 100px 200px 0 200px;
 }
 
-#hero div:first-child {
+#hero>div:first-child {
     /* background-color: aquamarine; */
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@ body {
     width: 75%;
 }
 
-#hero div:first-child img {
+#hero>div:first-child img {
     width: 100%;
 }
 
@@ -49,18 +49,36 @@ body {
     margin: 40px 0 30px 0;
 }
 
-#hero div:first-child p {
+#hero>div:first-child p {
     color: #fff;
     font-size: 22px;
     line-height: 34px;
 }
 
-#hero div:nth-child(2) {
+#hero>div:nth-child(2) {
     /* background-color: azure; */
     display: flex;
     justify-content: flex-end;
 }
 
-#hero div:nth-child(2) img {
+#hero>div:nth-child(2) img {
     width: 77%;
+}
+
+
+
+/* Small devices */
+@media only screen and (max-width: 768px) {
+    #hero {
+        grid-template-columns: 1fr;
+        padding: 80px 40px;
+    }
+
+    #hero>div:first-child {
+        width: 100%;
+    }
+
+    #hero>div:nth-child(2) {
+        display: none;
+    }
 }
