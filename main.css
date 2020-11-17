@@ -180,13 +180,13 @@ footer img {
     }
 
     /* Blog posts */
-    /* .blog-wrapper {
+    .blog-wrapper {
         padding: 40px;
     }
     
     .blog-posts {
-        /* grid-template-columns: 1fr; */
-    /* }  */
+        grid-template-columns: repeat(3, 1fr);
+    } 
 }
 
 
