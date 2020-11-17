@@ -43,6 +43,7 @@ body {
 
 #hero>div:first-child img {
     width: 100%;
+    max-width: 500px;
 }
 
 .horiz-line {
@@ -90,6 +91,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
+    row-gap: 40px;
 }
 
 .blog-posts img {
@@ -166,6 +168,29 @@ footer img {
 
 
 
+/* Medium devices */
+@media only screen and (max-width: 1296px) {
+    /* Hero module */
+    #hero {
+        padding: 60px 100px;
+    }
+
+    #hero>div:nth-child(2) img {
+        width: 90%;
+    }
+
+    /* Blog posts */
+    /* .blog-wrapper {
+        padding: 40px;
+    }
+    
+    .blog-posts {
+        /* grid-template-columns: 1fr; */
+    /* }  */
+}
+
+
+
 /* Small devices */
 @media only screen and (max-width: 768px) {
     /* Hero module */
@@ -190,6 +215,5 @@ footer img {
     .blog-posts {
         grid-template-columns: 1fr;
         column-gap: 0;
-        row-gap: 40px;
     }
 }

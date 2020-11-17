@@ -34,7 +34,7 @@
         <div class="blog-posts">
             <!-- Posts go here -->
         </div>
-        <button>See more posts</button>
+        <button class="see-more-btn">See more posts</button>
     </section>
 
     <!-- Questions module -->
@@ -53,6 +53,8 @@
     <script>
         // Blog Posts Container        
         const blogPostsContainer = document.querySelector('.blog-posts');
+        // See more button
+        const postBtn = document.querySelector('.see-more-btn');
         const posts = []; // List of posts
         const images = []; // List of images
         let currentIndex = 0; // Keep track of what's being rendered
@@ -109,6 +111,9 @@
         }
 
         fetchPosts();
+
+        // Hook renderPosts to click event on see-more-btn
+        postBtn.addEventListener('click', () => renderPosts(posts, images))
 
     </script>
 </body>
