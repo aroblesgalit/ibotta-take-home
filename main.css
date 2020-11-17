@@ -73,6 +73,9 @@ body {
 .blog-wrapper {
     width: 100%;
     padding: 100px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .blog-wrapper h2 {
@@ -107,6 +110,18 @@ body {
     line-height: 22px;
 }
 
+.blog-wrapper button {
+    color: var(--e-global-color-accent);
+    text-transform: uppercase;
+    border: 2px solid var(--e-global-color-accent);
+    border-radius: 30px;
+    background-color: transparent;
+    padding: 14px 34px;
+    font-size: 18px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
 
 /* Questions module */
 .questions-wrapper {
@@ -123,13 +138,18 @@ body {
 }
 
 .questions-wrapper button {
-    color: #fff;
     text-transform: uppercase;
     border: 2px solid #fff;
     border-radius: 30px;
     background-color: transparent;
     padding: 14px 34px;
     font-size: 18px;
+    cursor: pointer;
+}
+
+.questions-wrapper a {
+    text-decoration: none;
+    color: #fff;
 }
 
 
