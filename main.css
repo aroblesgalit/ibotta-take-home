@@ -90,15 +90,25 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 40px;
-    row-gap: 40px;
+    column-gap: 20px;
+    row-gap: 20px;
 }
 
-.blog-posts img {
+.post {
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.post img {
     width: 100%;
 }
 
-.blog-posts h3 {
+.post-body {
+    padding: 0 20px 20px 20px;
+}
+
+.post h3 {
     font-weight: var(--e-global-typography-primary-font-weight);
     font-size: 28px;
     margin: 20px 0;
@@ -109,7 +119,7 @@ body {
     overflow: hidden;
 }
 
-.blog-posts p {
+.post p {
     line-height: 22px;
 }
 
@@ -219,6 +229,13 @@ footer img {
         column-gap: 0;
     }
 
+    .img-wrapper {
+        height: 200px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+
     /* Questions module */
     .questions-wrapper {
         padding: 50px 40px;
@@ -228,10 +245,6 @@ footer img {
         font-size: 32px;
         margin-bottom: 30px;
     }
-
-    /* .questions-wrapper button {
-        margin-top: 0;
-    } */
 
     /* Footer */
     footer {
